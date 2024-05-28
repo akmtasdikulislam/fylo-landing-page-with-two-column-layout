@@ -27,12 +27,128 @@
     body {
         min-height: 100vh;
         min-width : 100vw;
+        overflow-x: hidden
     }
 
     h2,
     h3,
     nav a {
+        color      : var(--very-dark-blue);
         font-family: "Raleway", sans-serif;
+    }
+
+    a {
+        color          : var(--very-dark-blue);
+        font-weight    : 500;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color     : var(--bright-blue);
+        transition: all ease-in-out .3s;
+    }
+
+    /* HEADINGS */
+    h2 {
+        font-size: 2.25em;
+    }
+
+    /* Text */
+    p {
+        color    : var(--very-dark-blue);
+        font-size: 1em;
+    }
+
+    input {
+        border       : 1px solid var(--light-gray);
+        border-radius: .25em;
+        height       : 3em;
+        outline      : 0;
+        padding      : 0 1em;
+    }
+
+    button {
+        background-color: var(--bright-blue);
+        border          : 0;
+        border-radius   : .25em;
+        color           : white;
+        font-weight     : 500;
+        height          : fit-content;
+        padding         : .825em 3.5em;
+        text-wrap       : nowrap;
+        width           : max-content;
+    }
+
+    button:hover {
+        cursor    : pointer;
+        opacity   : 80%;
+        transition: all ease-in-out .2s;
+    }
+
+    section,
+    header,
+    footer {
+        align-items    : center;
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        width          : 100%;
+    }
+
+    .container {
+        align-items    : center;
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        width          : 90%;
+    }
+
+    /* HEADER Section */
+    .header-section {
+        height: 10em;
+    }
+
+    .nav-menu {
+        align-items   : center;
+        display       : flex;
+        flex-direction: row;
+        gap           : 4em;
+    }
+
+    /* HERO Section */
+    .hero-section .container {
+        flex-direction: row-reverse;
+    }
+
+    .hero-section img {
+        width: 50%;
+    }
+
+    .hero-section .column {
+        width: 35%;
+    }
+
+    .hero-section h2 {
+        line-height: 1.5em;
+    }
+
+    .hero-section p {
+        margin: 1em 0;
+        width : 85%;
+    }
+
+    .hero-section .get-started-form {
+        align-items    : center;
+        display        : flex;
+        flex-direction : row;
+        gap            : 1em;
+        height         : 2.5em;
+        justify-content: space-between;
+        width          : 30em;
+    }
+
+    .hero-section .get-started-form input {
+        width: 100%;
     }
 
     .attribution {

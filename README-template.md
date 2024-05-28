@@ -45,7 +45,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - [Solution URL](https://github.com/akmtasdikulislam/fylo-landing-page-with-two-column-layout)
-- Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://akmtasdikulislam.github.io/fylo-landing-page-with-two-column-layout/)
 
 ## My process
 
