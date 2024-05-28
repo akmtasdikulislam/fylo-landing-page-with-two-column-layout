@@ -18,14 +18,21 @@
     ::backdrop,
     ::after {
         box-sizing : border-box;
+        font-family: "Open Sans", sans-serif;
         margin     : 0;
         padding    : 0;
-        font-family: "Raleway", sans-serif;
     }
 
+    /* General Styles */
     body {
         min-height: 100vh;
         min-width : 100vw;
+    }
+
+    h2,
+    h3,
+    nav a {
+        font-family: "Raleway", sans-serif;
     }
 
     .attribution {
