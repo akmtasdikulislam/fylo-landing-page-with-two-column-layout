@@ -108,6 +108,10 @@
         height: 10em;
     }
 
+    .logo {
+        width: 10em;
+    }
+
     .nav-menu {
         align-items   : center;
         display       : flex;
@@ -116,6 +120,10 @@
     }
 
     /* HERO Section */
+    .hero-section {
+        height: 50em;
+    }
+
     .hero-section .container {
         flex-direction: row-reverse;
     }
@@ -149,6 +157,94 @@
 
     .hero-section .get-started-form input {
         width: 100%;
+    }
+
+    /* OVERVIEW Section */
+    .overview-section {
+        background-image   : url(./images/bg-curve-desktop.svg);
+        background-position: bottom;
+        background-repeat  : no-repeat;
+        background-size    : 300vw 50em;
+        height             : 50em;
+    }
+
+    .overview-section .container {
+        flex-direction: row-reverse;
+        gap           : 5em;
+        margin-bottom : -5em;
+    }
+
+    .overview-section .container>img {
+        width: 40%;
+    }
+
+    .overview-section .container .column {
+        width: 45%;
+    }
+
+    .overview-section .container .column>p {
+        width: 70%;
+    }
+
+    .overview-section .container .column>p:nth-child(2) {
+        margin: 2em 0 1.25em 0;
+    }
+
+    .see-how-works-link {
+        align-items   : center;
+        border-bottom : 1px solid var(--moderate-cyan);
+        color         : var(--moderate-cyan);
+        display       : inline-flex;
+        gap           : .5em;
+        margin        : 1em 0;
+        padding-bottom: .15em;
+    }
+
+    .testimonial {
+        background-color: white;
+        border-radius   : .5em;
+        box-shadow      : rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        display         : flex;
+        flex-direction  : column;
+        height          : 16em;
+        justify-content : space-between;
+        margin-top      : 1.5em;
+        padding         : 1.75em;
+        width           : 25em;
+    }
+
+    .testimonial>img {
+        height: 1.25em;
+        width : 1.25em;
+    }
+
+    .testimonial>p {
+        font-size  : .95em;
+        line-height: 1.75em;
+        width      : 100%;
+    }
+
+    .testimonial .author {
+        align-items   : center;
+        display       : flex;
+        flex-direction: row;
+        gap           : 1em;
+    }
+
+    .testimonial .author img {
+        border-radius: 50%;
+        height       : 2.5em;
+        width        : 2.5em;
+    }
+
+    .testimonial .author .author-details p.name {
+        font-size  : .9em;
+        font-weight: 700;
+        line-height: 1.5em;
+    }
+
+    .testimonial .author .author-details p.designation {
+        font-size: .8em;
     }
 
     .attribution {
