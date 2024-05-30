@@ -27,7 +27,8 @@
     body {
         min-height: 100vh;
         min-width : 100vw;
-        overflow-x: hidden
+        overflow-x: hidden;
+        position  : relative;
     }
 
     h2,
@@ -115,7 +116,7 @@
         height: 10em;
     }
 
-    .logo {
+    .header-section .logo {
         width: 10em;
     }
 
@@ -289,12 +290,95 @@
         padding: 1em 3em;
     }
 
+    /* FOOTER Section */
+    .footer-section {
+        background-color: var(--very-dark-blue);
+        color           : white;
+        height          : 25em;
+    }
+
+    .footer-section .container {
+        flex-direction: column;
+        gap           : 1.5em;
+    }
+
+    .footer-section .logo {
+        filter: brightness(-300%) invert(100%);
+        /*To turn the whole logo into white*/
+        width : 10em;
+    }
+
+    .footer-section .row {
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        width          : 100%;
+    }
+
+    .footer-section .row p,
+    .footer-section .row a {
+        color      : white;
+        font-weight: 400;
+    }
+
+    .footer-section a:hover {
+        color     : var(--bright-blue);
+        transition: all ease-in-out .3s;
+    }
+
+    .footer-section .row .column:not(:last-child) {
+        display       : flex;
+        flex-direction: column;
+        gap           : 1em;
+    }
+
+    .footer-section .phone,
+    .footer-section .email {
+        align-items   : center;
+        display       : flex;
+        flex-direction: row;
+        gap           : 1.25em;
+    }
+
+    .footer-section .social-links {
+        align-items   : center;
+        display       : flex;
+        flex-direction: row;
+        gap           : 1em;
+        height        : fit-content;
+        padding-right : 10em;
+    }
+
+    .footer-section .social-links a {
+        align-items    : center;
+        border         : 1px solid white;
+        border-radius  : 50%;
+        display        : flex;
+        font-size      : 1.1em;
+        height         : 2em;
+        justify-content: center;
+        width          : 2em;
+    }
+
+    .footer-section .social-links a:hover {
+        border-color: var(--bright-blue);
+    }
 
     .attribution {
+        bottom    : 2em;
+        color     : white;
         font-size : .9em;
+        left      : 50%;
+        position  : absolute;
         text-align: center;
+        transform : translateX(-50%);
     }
 
     .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: var(--bright-blue);
+    }
+
+    .attribution a:hover {
+        border-bottom: 1px solid var(--bright-blue);
+        margin-bottom: -1px;
     }
