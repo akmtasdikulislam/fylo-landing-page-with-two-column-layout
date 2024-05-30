@@ -67,13 +67,20 @@
         padding      : 0 1em;
     }
 
+    input::placeholder {
+        color: lightgray;
+    }
+
     button {
         background-color: var(--bright-blue);
         border          : 0;
         border-radius   : .25em;
         color           : white;
+        font-family     : "Raleway", sans-serif;
+        font-size       : .85em;
         font-weight     : 500;
         height          : fit-content;
+        letter-spacing  : .05em;
         padding         : .825em 3.5em;
         text-wrap       : nowrap;
         width           : max-content;
@@ -246,6 +253,42 @@
     .testimonial .author .author-details p.designation {
         font-size: .8em;
     }
+
+    /* GET STARTED Section */
+
+    .get-started-section {
+        background-color: var(--desaturated-blue);
+        height          : 20em;
+    }
+
+    .get-started-section h3 {
+        color    : white;
+        font-size: 2em;
+    }
+
+    .get-started-section p {
+        color      : white;
+        font-size  : .925em;
+        line-height: 1.5em;
+        margin-top : 1.25em;
+        width      : 43%;
+    }
+
+    .get-started-section .column:nth-child(2) {
+        display       : flex;
+        flex-direction: column;
+        gap           : 1em;
+        width         : 25%;
+    }
+
+    .get-started-section .column:nth-child(2)>* {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    .get-started-section .column:nth-child(2) button {
+        padding: 1em 3em;
+    }
+
 
     .attribution {
         font-size : .9em;
