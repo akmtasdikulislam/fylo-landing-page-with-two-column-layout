@@ -51,25 +51,26 @@
 
     /* HEADINGS */
     h2 {
-        font-size: 2.25em;
+        font-size: 2.45em;
     }
 
     /* Text */
     p {
         color    : var(--very-dark-blue);
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     input {
         border       : 1px solid var(--light-gray);
         border-radius: .25em;
-        height       : 3em;
+        height       : 3.5em;
         outline      : 0;
-        padding      : 0 1em;
+        padding      : 0 1.5em;
     }
 
     input::placeholder {
-        color: lightgray;
+        color         : lightgray;
+        letter-spacing: .06em;
     }
 
     button {
@@ -82,7 +83,7 @@
         font-weight     : 500;
         height          : fit-content;
         letter-spacing  : .05em;
-        padding         : .825em 3.5em;
+        padding         : 1.1em 4.5em;
         text-wrap       : nowrap;
         width           : max-content;
     }
@@ -108,12 +109,12 @@
         display        : flex;
         flex-direction : row;
         justify-content: space-between;
-        width          : 90%;
+        width          : 89%;
     }
 
     /* HEADER Section */
     .header-section {
-        height: 10em;
+        height: 11em;
     }
 
     .header-section .logo {
@@ -124,12 +125,12 @@
         align-items   : center;
         display       : flex;
         flex-direction: row;
-        gap           : 4em;
+        gap           : 3.575em;
     }
 
     /* HERO Section */
     .hero-section {
-        height: 50em;
+        height: 32.65em;
     }
 
     .hero-section .container {
@@ -141,16 +142,21 @@
     }
 
     .hero-section .column {
-        width: 35%;
+        margin-top: -2.5em;
+        width     : 47%;
     }
 
     .hero-section h2 {
-        line-height: 1.5em;
+        letter-spacing: .01em;
+        line-height   : 1.5em;
     }
 
     .hero-section p {
-        margin: 1em 0;
-        width : 85%;
+        letter-spacing: .01em;
+        line-height   : 1.35em;
+        margin-bottom : .5em;
+        margin-top    : 1em;
+        width         : 95%;
     }
 
     .hero-section .get-started-form {
@@ -158,9 +164,10 @@
         display        : flex;
         flex-direction : row;
         gap            : 1em;
-        height         : 2.5em;
+        height         : fit-content;
         justify-content: space-between;
-        width          : 30em;
+        margin-top     : 1.5em;
+        width          : 33.75em;
     }
 
     .hero-section .get-started-form input {
@@ -172,30 +179,38 @@
         background-image   : url(./images/bg-curve-desktop.svg);
         background-position: bottom;
         background-repeat  : no-repeat;
-        background-size    : 300vw 50em;
-        height             : 50em;
+        background-size    : 326vw 49em;
+        height             : 49em;
+        margin-top         : 8.75em;
     }
 
     .overview-section .container {
         flex-direction: row-reverse;
         gap           : 5em;
-        margin-bottom : -5em;
     }
 
     .overview-section .container>img {
-        width: 40%;
+        margin-top: 1.75em;
+        width     : 42.35%;
     }
 
     .overview-section .container .column {
-        width: 45%;
+        margin-top: 4.3em;
+        width     : 57.65%;
+    }
+
+    .overview-section .container .column h2 {
+        letter-spacing: 0.01725em;
     }
 
     .overview-section .container .column>p {
-        width: 70%;
+        font-size  : 1em;
+        line-height: 1.5em;
+        width      : 80%;
     }
 
     .overview-section .container .column>p:nth-child(2) {
-        margin: 2em 0 1.25em 0;
+        margin: 2.5em 0 1.05em 0;
     }
 
     .see-how-works-link {
@@ -203,8 +218,9 @@
         border-bottom : 1px solid var(--moderate-cyan);
         color         : var(--moderate-cyan);
         display       : inline-flex;
-        gap           : .5em;
-        margin        : 1em 0;
+        gap           : .3em;
+        margin-bottom : 1.25em;
+        margin-top    : 1em;
         padding-bottom: .15em;
     }
 
@@ -214,72 +230,83 @@
         box-shadow      : rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         display         : flex;
         flex-direction  : column;
-        height          : 16em;
+        height          : 13.5em;
         justify-content : space-between;
         margin-top      : 1.5em;
-        padding         : 1.75em;
-        width           : 25em;
+        padding         : 2em;
+        padding-top     : 1.8em;
+        width           : 22.3em;
     }
 
     .testimonial>img {
-        height: 1.25em;
-        width : 1.25em;
+        height     : 1em;
+        margin-left: .1em;
+        width      : 1em;
     }
 
     .testimonial>p {
-        font-size  : .95em;
-        line-height: 1.75em;
-        width      : 100%;
+        font-size     : .9em;
+        letter-spacing: -0.01em;
+        line-height   : 1.6em;
+        margin-top    : .5em;
+        width         : 100%;
     }
 
     .testimonial .author {
         align-items   : center;
         display       : flex;
         flex-direction: row;
-        gap           : 1em;
+        gap           : .5em;
+        margin-left   : .1em;
+        margin-top    : .97em;
     }
 
     .testimonial .author img {
         border-radius: 50%;
-        height       : 2.5em;
-        width        : 2.5em;
+        height       : 2em;
+        width        : 2em;
     }
 
     .testimonial .author .author-details p.name {
-        font-size  : .9em;
-        font-weight: 700;
-        line-height: 1.5em;
+        font-size     : .7em;
+        font-weight   : 700;
+        letter-spacing: 0.03em;
+        line-height   : 1.575em;
     }
 
     .testimonial .author .author-details p.designation {
-        font-size: .8em;
+        font-size: .545em;
     }
 
     /* GET STARTED Section */
 
     .get-started-section {
         background-color: var(--desaturated-blue);
-        height          : 20em;
+        height          : 20.1em;
     }
 
     .get-started-section h3 {
-        color    : white;
-        font-size: 2em;
+        color     : white;
+        font-size : 2em;
+        margin-top: .55em;
     }
 
     .get-started-section p {
-        color      : white;
-        font-size  : .925em;
-        line-height: 1.5em;
-        margin-top : 1.25em;
-        width      : 43%;
+        color         : white;
+        font-size     : 1em;
+        letter-spacing: 0.03em;
+        line-height   : 1.5em;
+        margin-top    : 1.3em;
+        width         : 70%;
     }
 
     .get-started-section .column:nth-child(2) {
         display       : flex;
         flex-direction: column;
         gap           : 1em;
-        width         : 25%;
+        margin-right  : 2.5em;
+        margin-top    : .75em;
+        width         : 60%;
     }
 
     .get-started-section .column:nth-child(2)>* {
@@ -287,25 +314,26 @@
     }
 
     .get-started-section .column:nth-child(2) button {
-        padding: 1em 3em;
+        padding: 1.2em 2.15em;
     }
 
     /* FOOTER Section */
     .footer-section {
         background-color: var(--very-dark-blue);
         color           : white;
-        height          : 25em;
+        height          : 24.5em;
     }
 
     .footer-section .container {
         flex-direction: column;
-        gap           : 1.5em;
+        gap           : 1.25em;
+        margin-top    : 2.25em;
     }
 
     .footer-section .logo {
         filter: brightness(-300%) invert(100%);
         /*To turn the whole logo into white*/
-        width : 10em;
+        width : 11em;
     }
 
     .footer-section .row {
@@ -332,21 +360,26 @@
         gap           : 1em;
     }
 
+    .footer-section .row:nth-child(2) .column:nth-child(2) {
+        margin-left: 1.75em;
+    }
+
     .footer-section .phone,
     .footer-section .email {
         align-items   : center;
         display       : flex;
         flex-direction: row;
         gap           : 1.25em;
+        letter-spacing: -.85px;
     }
 
     .footer-section .social-links {
         align-items   : center;
         display       : flex;
         flex-direction: row;
-        gap           : 1em;
+        gap           : .75em;
         height        : fit-content;
-        padding-right : 10em;
+        padding-right : 11.5em;
     }
 
     .footer-section .social-links a {
@@ -355,9 +388,9 @@
         border-radius  : 50%;
         display        : flex;
         font-size      : 1.1em;
-        height         : 2em;
+        height         : 1.8em;
         justify-content: center;
-        width          : 2em;
+        width          : 1.8em;
     }
 
     .footer-section .social-links a:hover {
