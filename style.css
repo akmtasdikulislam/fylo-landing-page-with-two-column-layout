@@ -313,9 +313,14 @@
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     }
 
+    .get-started-section .column:nth-child(2) input#email {
+        max-width: 35em;
+    }
+
     .get-started-section .column:nth-child(2) button {
         padding: 1.2em 2.15em;
     }
+
 
     /* FOOTER Section */
     .footer-section {
@@ -414,4 +419,25 @@
     .attribution a:hover {
         border-bottom: 1px solid var(--bright-blue);
         margin-bottom: -1px;
+    }
+
+    /* RESPONSIVENESS */
+
+    /* - Larger Screens - Television, Widescreen Monitors 📺🖥️ */
+    @media (min-width: 1920px) {
+        .container {
+            width: calc(100% - 35%);
+        }
+    }
+
+    @media (min-width: 1620px) {
+        .hero-section {
+            height    : auto;
+            max-height: 40em;
+            min-height: 35em;
+        }
+
+        .hero-section img {
+            max-width: 53.375em;
+        }
     }
